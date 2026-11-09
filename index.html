@@ -454,7 +454,7 @@
     if (!nameInput.value.trim()) { alert("Please enter your name"); return; }
     btn.textContent = 'Submitting...'; btn.classList.add('loading');
     const data = { name: nameInput.value.trim(), attending: "Yes", count: familyCount };
-    fetch("https://script.google.com/macros/s/AKfycbx3O5cjkNHCaNXar62GLyxz0hV7Tz5EnyPqvABGKUhz2xTXs2IDVGRIKvqyqC0TmJ0UVw/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxRcjR6qk0xlhp6N4Fde5r9NGKP9vsA66VIGjO9SjvFyYRRFjfe5Exz58dHGMzEeCHm_Q/exec", {
       method: "POST", body: JSON.stringify(data)
     }).then(() => {
       document.getElementById('name-section').style.display = 'none';
